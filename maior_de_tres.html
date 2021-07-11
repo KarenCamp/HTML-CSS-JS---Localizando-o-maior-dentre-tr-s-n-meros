@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores, Condições e Funções em JS</title>
+    <style>
+        body { background-image: linear-gradient(to right, aquamarine, blue);
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               font-size: 25px;
+               font-weight: lighter;
+             }
+        
+        button { font-size: 25px;
+                 background-color: white; 
+                 border-radius: 15px;
+               }
+
+        h1 { background-color: white;
+             width: 700px;
+             text-align: center;
+             border-radius: 15px;}
+    </style>
+</head>
+<body>
+    <h1>O Maior de Três</h1>
+    <p>&nbsp &nbsp Clique no botão e interaja comigo!</p>
+    &nbsp &nbsp <button onclick="maior_num()">Interajir</button>
+    <div id="retorno">
+    </div>
+ <script>
+        function maior_num(){
+            var resposta = window.confirm("Vamos ver qual o maior número digitado por você?");
+            if (resposta == true) {
+                var n01 = Number(prompt('Digite o primeiro número ou, automaticamente ele será "0" : '))
+                var n02 = Number(prompt('Digite o segundo número ou, automaticamente ele será "0" : '))
+                var n03 = Number(prompt('Digite o terceiro número ou, automaticamente ele será "0" : '))
+                if (n01 > n02 && n01 > n03) { var mensagem = (`<br> &nbsp &nbsp O maior número dentre os três digitados por você é: ${n01}. Legal!`)} 
+                else if (n02 > n01 && n02 > n03) { var mensagem = (`<br> &nbsp &nbsp O maior número dentre os três digitados por você é: ${n02}. Legal!`) }
+                else { var mensagem = (`<br> &nbsp &nbsp O maior número dentre os três digitados por você é: ${n03}. Legal!`)}
+                } else{
+                var mensagem = ("<br> &nbsp &nbsp Ok...");
+            }
+           window.document.getElementById("retorno").innerHTML = mensagem;
+        }
+    </script>
+</body>
+</html>

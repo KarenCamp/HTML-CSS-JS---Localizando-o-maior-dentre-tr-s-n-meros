@@ -1,0 +1,1 @@
+Exercício proposto pelo professor Silvio, em uma das primeiras aulas do curso "Produção de Websites Expert - Front End" oferecido pela instituição Senac de ensino. Este exercício é especial, por que, além de eu colocar em prática os conhecimentos em JS que aprendi estudando, também pude ajudar uma colega da turma que estava com dificuldades para fazê-lo.
